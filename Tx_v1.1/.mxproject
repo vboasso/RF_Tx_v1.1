@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=/home/vale/Documentos/Tx_v1.1/Inc
+HeaderPath=/home/vale/git/RF_Tx_v1.1/Tx_v1.1/Inc
 HeaderFiles=stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;
-SourcePath=/home/vale/Documentos/Tx_v1.1/Src
+SourcePath=/home/vale/git/RF_Tx_v1.1/Tx_v1.1/Src
 SourceFiles=stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
