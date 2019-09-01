@@ -106,38 +106,39 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
-    /* USER CODE END WHILE */
 	  LeerTemperatura();
-	  DecimalBinario();
-	  //	  int SumaParidad=0,p;
-	  //	  	for(p=15;p>=8;p--){
-	  //	  		if(ArrayPrueba[p]==1){
-	  //	  			SumaParidad=SumaParidad+1;
-	  //	  		}
+		  DecimalBinario();
+		  //	  int SumaParidad=0,p;
+		  //	  	for(p=15;p>=8;p--){
+		  //	  		if(ArrayPrueba[p]==1){
+		  //	  			SumaParidad=SumaParidad+1;
+		  //	  		}
 
-	  //	  	}
-	  //	  	Paridad=SumaParidad%2;
-	  //	  	ArrayPrueba[16]=Paridad;
+		  //	  	}
+		  //	  	Paridad=SumaParidad%2;
+		  //	  	ArrayPrueba[16]=Paridad;
 
 
 
-	    /* ENVIO DE LA TRAMA */
+		    /* ENVIO DE LA TRAMA */
 
-	  for(e=0;e<10;e++){
+		  for(e=0;e<10;e++){
 
-	   	  for(cont=0;cont<16;cont++){
-	   		  HAL_Delay(10);
-	   		  if(ArrayPrueba[cont]==1){						//cambiar por ArrayPrueba y ver el orden en que se envía
-	  	  			  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
-	  	  		  }
-	   		  else{
-	  	  			  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
-	  	  		  }
+		   	  for(cont=0;cont<16;cont++){
+		   		  HAL_Delay(10);
+		   		  if(ArrayPrueba[cont]==1){						//cambiar por ArrayPrueba y ver el orden en que se envía
+		  	  			  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
+		  	  		  }
+		   		  else{
+		  	  			  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
+		  	  		  }
 
-	  	  	  }
-	  	  }
+		  	  	  }
+		  	  }
+    /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
-  }
+  } //Llave while
   /* USER CODE END 3 */
 }
 
@@ -207,7 +208,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
   hadc1.Init.ScanConvMode = DISABLE;
-  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.ContinuousConvMode = ENABLE;
   hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
