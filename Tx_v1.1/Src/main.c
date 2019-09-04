@@ -107,16 +107,16 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1) {
 	  LeerTemperatura();
-		  DecimalBinario();
-		  //	  int SumaParidad=0,p;
-		  //	  	for(p=15;p>=8;p--){
-		  //	  		if(ArrayPrueba[p]==1){
-		  //	  			SumaParidad=SumaParidad+1;
-		  //	  		}
+	  DecimalBinario();
+		  	  int SumaParidad=0,p;
+		  	  	for(p=14;p>=8;p--){
+		  	  		if(ArrayPrueba[p]==1){
+		  	  			SumaParidad=SumaParidad+1;
+		  	  		}
 
-		  //	  	}
-		  //	  	Paridad=SumaParidad%2;
-		  //	  	ArrayPrueba[16]=Paridad;
+		  	  	}
+		  	  	Paridad=SumaParidad%2;
+		  	  	ArrayPrueba[15]=Paridad;
 
 
 
@@ -271,11 +271,11 @@ void LeerTemperatura(){
 		}
 
 void DecimalBinario(){ //+paridad
-	int dividendo=temperatura, c=15, bin;
+	int dividendo=temperatura, c, bin;
 
 
 
-	for(c=15;c>=8;c--){
+	for(c=14;c>=8;c--){					//estaba c=15 lo que comenzaba a escribir el dato en el bit de paridad
 		if(dividendo!=0){
 			bin = dividendo % 2;
 			ArrayPrueba[c]=bin;
