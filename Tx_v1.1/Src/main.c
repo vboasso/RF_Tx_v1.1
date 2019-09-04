@@ -60,7 +60,7 @@ void DecimalBinario();
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 //int Array[]={0,1,0,0,0,1,1,0,1,1,0,0,1,1,0,0};
-int ArrayPrueba[]={0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0};		//Una vez q funcione cambiar el nombre
+int ArrayPrueba[]={0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0};		//una vez q funcione cambiar el nombre
 int cont;
 int i, e, Paridad;
 
