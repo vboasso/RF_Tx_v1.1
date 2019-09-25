@@ -125,7 +125,7 @@ int main(void)
 		  for(e=0;e<10;e++){
 
 		   	  for(cont=0;cont<16;cont++){
-		   		  HAL_Delay(10);
+		   		  HAL_Delay(20);
 		   		  if(ArrayPrueba[cont]==1){						//cambiar por ArrayPrueba y ver el orden en que se envía
 		  	  			  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
 		  	  		  }
